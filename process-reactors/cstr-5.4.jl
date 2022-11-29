@@ -1,4 +1,4 @@
-Process Parameters
+#Process Parameters
 ρ = 880.0               #kg/m^3
 Cp = 1750.0             #J/kg.K
 Cpj = 4180.0
@@ -55,8 +55,10 @@ J(Ca, Cb, Cc, T, Tj, K) = [∇f1(Ca, Cb, Cc, T, Tj, K)';
                            ∇f5(Ca, Cb, Cc, T, Tj, K)';
                            ∇f6(Ca, Cb, Cc, T, Tj, K)']
 
+#populating initial array
 X = [Cain, Cbin, Ccin, Tin, Tjin, Kin]
 
+#newton-raphson iteration
 while norm(F(X[1], X[2], X[3], X[4], X[5], X[6]))>1e-3
     
     δ = J(X[1], X[2], X[3], X[4], X[5], X[6])\-F(X[1], X[2], X[3], X[4], X[5], X[6])
@@ -70,7 +72,7 @@ println("Cc=", round(X[3], digits=4), " mol/m^3")
 println("T=", round(X[4], digits=4), " K")
 println("Tj=", round(X[5], digits=4), " K")
 
-#= 
+#=
 Output:
 
 Ca=49.4656 mol/m^3

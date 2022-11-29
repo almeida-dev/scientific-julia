@@ -108,4 +108,4 @@ texts = [(j, i, text(round(S[i, j], digits=2), 2, :black, :center))
 
 heatmap(T, aspect_ratio=1.0, color=:thermal, xlim=(0, 30))
 annotate!(texts, linecolor=:blue)
-savefig("squared_pipe.pdf")
+savefig("pipe_heatmap.pdf")

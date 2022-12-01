@@ -1,7 +1,0 @@
-Numerical parameters:
-k = 190.0 W/mK
-h = 5000.0 W/m²K
-q"₀ = 100000.0 W/m²
-Tₑₙᵥ = 15.0 °C
-tolerance = 1.0e-5
-iterations = 473 

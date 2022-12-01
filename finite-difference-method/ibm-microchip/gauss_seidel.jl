@@ -1,4 +1,4 @@
-# solver function
+# solver function for ibm_microchip.jl
 function gauss_seidel!(T, k, h, q₀, Tₑₙᵥ)
 
     @assert size(T) == (6, 5) "Matrix must have size = (6,5)"

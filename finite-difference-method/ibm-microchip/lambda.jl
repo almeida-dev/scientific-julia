@@ -1,3 +1,4 @@
+# script for optimization
 include("gauss_seidel.jl")
 using LinearAlgebra
 

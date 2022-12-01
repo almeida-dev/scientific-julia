@@ -1,3 +1,4 @@
+# main file for solving finite difference
 include("gauss_seidel.jl") #address of file that contains external functions
 using LinearAlgebra, Plots, DataFrames
 

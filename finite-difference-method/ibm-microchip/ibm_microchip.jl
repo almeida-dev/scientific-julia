@@ -76,3 +76,5 @@ texts = [(j, i, text(round(S[i, j], digits=2), 8, :black, :center))
 
 heatmap(S, aspect_ratio=1.6, color=:thermal, xlim=(0, 6))
 annotate!(texts, linecolor=:blue)
+
+savefig("ibm_microchip.pdf")
